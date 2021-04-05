@@ -1,0 +1,162 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+body {
+    background-color: #F8EFD3;
+}
+
+#logo{
+    margin-left: 10%;
+      width: 199px;
+    height: 126.17px;
+    display: inline;
+   }
+
+ul {
+    float: right;
+    margin-right: 7%;
+    margin-top: 60px;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    margin: 20px;
+    font-family: gotham, sans-serif;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: alverata-irregular, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+    margin-left: 10%;
+    margin-top: 160px;
+}
+
+#secondline {
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+h2 {
+    font-family: gotham, sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-top: 50px;
+    line-height: 53px;
+}
+
+
+
+@media screen and (max-width: 915px) {
+    #navlist {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    h1 {
+        font-size: 35px;
+    }
+    #logo {
+        width: 132px;
+        height: 83.5px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* navigation animations */
+a, a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  li {
+    display: inline-block;
+    position: relative;
+  }
+  li:last-child {
+    margin-right: 0;
+  }
+  
+  li:after {
+    content: '';
+    display: block;
+    margin: 3px auto auto auto;
+    height: 1px;
+    width: 0px;
+    background: transparent;
+    transition: width .3s ease, background-color .3s ease;
+  }
+  
+  li:hover:after {
+    width: 100%;
+    background: #231F20;
+  }
+
+  #footerlogo {
+    display: inline;
+    margin-left: 117px;
+    width: 6%;
+    margin-top: 40px;
+    align-items: baseline;
+}
+
+.footer {
+    background-color: #231F20;
+    height: 120px;
+}
+
+#footernav {
+    margin-top: 20px;
+}
+
+.footerinline{
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+body {
+	animation-name: backgroundColorPalette;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+}
+
+@keyframes backgroundColorPalette {
+	0% {
+		background: #F8EFD3;
+	}
+	20% {
+		background: #FBC6B9;
+	}
+	40% {
+		background: #DA5227;
+	}
+	60% {
+		background: #C08F3B;
+	}
+	80% {
+		background: #00A651;
+	}
+    100% {
+        background: #344BE1;
+    }
+}
